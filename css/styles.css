@@ -885,12 +885,18 @@ form {
   color: #212121;
 }
 
-.form-field {
+.form-container {
   display: flex;
   flex-direction: column;
   margin: 0;
   margin-bottom: 10px;
 
+  font-size: 12px;
+  line-height: 14px;
+  color: #757575;
+}
+
+.comment {
   font-size: 12px;
   line-height: 14px;
   color: #757575;
@@ -909,12 +915,12 @@ form {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field input:focus + .form-field-icon {
+.form-container input:focus + .form-field-icon {
   fill: var(--accent-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field input {
+.form-container input {
   margin: 0;
   padding: 0;
   padding-left: 42px;
@@ -927,7 +933,7 @@ form {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field input:focus {
+.form-container input:focus {
   outline: none;
   border-color: var(--accent-color);
 }
@@ -977,6 +983,11 @@ form {
   position: absolute;
 }
 
+.form-submit {
+  display: flex;
+  align-items: center;
+}
+
 .checkbox-icon {
   display: inline-block;
   width: 16px;
@@ -997,6 +1008,16 @@ form {
   background-origin: border-box;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-submit:hover .checkbox-icon,
+.form-submit:focus-within .checkbox-icon {
+  border: 2px solid var(--accent-color);
+  cursor: pointer;
+}
+
+.form-confirm:focus {
+  color: var(--accent-color);
 }
 
 .js-registration-form button {
