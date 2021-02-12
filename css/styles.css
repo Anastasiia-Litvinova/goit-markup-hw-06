@@ -622,6 +622,7 @@ header > .container {
 
 .footer-mail-form {
   display: flex;
+  justify-content: end;
 }
 
 .footer-form-text {
