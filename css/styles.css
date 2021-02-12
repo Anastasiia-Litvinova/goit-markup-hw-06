@@ -527,6 +527,7 @@ header > .container {
 
 .location {
   margin: 0;
+  margin-bottom: 9px;
 }
 
 .footer .link-logo {
@@ -550,6 +551,7 @@ header > .container {
   letter-spacing: 0.03em;
   font-style: normal;
   display: block;
+  margin-bottom: 9px;
 }
 
 .footer-contact-link {
@@ -557,18 +559,10 @@ header > .container {
   display: inline-block;
 }
 
-.location,
-.footer-list-item {
-  margin-bottom: 9px;
-}
-
 .footer-container {
   display: flex;
   align-items: baseline;
-}
-
-.footer-address {
-  margin-right: 70px;
+  justify-content: space-between;
 }
 
 .footer-socialnet {
@@ -617,12 +611,15 @@ header > .container {
 }
 
 .footer-subscribe {
-  margin-left: 93px;
+  margin: 0;
+  margin-left: ;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .footer-mail-form {
   display: flex;
-  justify-content: end;
 }
 
 .footer-form-text {
@@ -632,6 +629,8 @@ header > .container {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
+  margin: 0;
+  margin-bottom: 20px;
   color: #ffffff;
 }
 
@@ -811,6 +810,10 @@ header > .container {
 }
 
 .working-item:hover .portfolio-box {
+  transform: translateY(0);
+}
+
+.working-link:focus .portfolio-box {
   transform: translateY(0);
 }
 /* ========== END PORTFOLIO ========== */
